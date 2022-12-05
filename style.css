@@ -1,0 +1,18 @@
+.page__link {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.link-lng {
+    font-weight: 700;
+}
+
+.bg-burder {
+    display:none;    
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+}

@@ -1,0 +1,118 @@
+.promo {
+    background: #CBE6FF;
+    max-width: 100%;
+    padding-top: 3rem;
+    z-index: 0;
+    position: relative;
+
+    @media (min-width: 768px) {
+        padding-top: 6rem;
+    }
+
+    &__header {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__image {
+        text-align: center;
+        padding-top: 35px;
+        position: relative;
+        z-index: 2;
+
+        @media (min-width: 768px) {
+            padding-top: 86px;
+        }
+
+        img {
+            max-width: 980px;
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    &__waves {
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        display: flex;
+        font-weight: 700;
+        font-size: 48px;
+        position: relative;
+        max-width: 898px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 24px 0 0 0;
+        line-height: 64px;
+
+        h2 {
+            font-family: 'Gilroy', sans-serif;
+            text-align: center;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.2;
+            margin: 0;
+            @media (min-width: 768px) {
+                font-size: 48px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    &__btn-wrapper {
+        margin-right: 10px;
+    }
+
+    &__btn {
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        line-height: 16px;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        width: 244px;
+        height: 48px;
+        background-color: #0075E3;
+        border-radius: 50px;
+        margin: 48px auto 0 auto;
+
+
+        &:hover,
+        &:focus {
+            background: #0062BD;
+        }
+    }
+
+    //Promo__images style
+    &__images-block {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        padding-top: 87px;
+    }
+    &__img-man {
+        position: absolute;
+        z-index: 1;
+        bottom: -4px;
+    }
+}
+
+// Hamburger menu
+.promo__hamburger {
+    display: none;
+}

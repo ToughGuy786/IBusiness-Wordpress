@@ -1,0 +1,50 @@
+.steps {
+    padding: 60px 0;
+
+    &__subheading {
+        font-size: 16px;
+        color: #8C8C8C;
+        margin-bottom: 2rem;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 29px 0 10px 45px;
+    }
+
+    &__item-1 {
+        max-width: 338px;
+        background: url(../icons/01.png) 0 0 no-repeat;
+    }
+
+    &__item-2 {
+        max-width: 338px;
+        background: url(../icons/02.png) 0 0 no-repeat;
+    }
+
+    &__item-3 {
+        max-width: 338px;
+        background: url(../icons/03.png) 0 0 no-repeat;
+    }
+
+    &__title {
+        font-family: 'Gilroy', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 16px;
+    }
+}

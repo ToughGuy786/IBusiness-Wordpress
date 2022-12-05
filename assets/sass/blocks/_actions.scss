@@ -1,0 +1,366 @@
+.actions {
+    padding: 50px 0;
+    background-color: #FBFBFB;
+    overflow: hidden;
+    &__img {
+        width: 305px;
+        img {
+            width: 100%;
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 88px 0;
+    }
+
+    &__subheading {
+        font-size: 16px;
+        color: #8C8C8C;
+        margin-bottom: 2rem;
+    }
+
+    &__img {
+        text-align: center;
+
+        img {
+
+            @media (max-width: 767px) {
+                
+                max-width: 166px;
+            }
+        }
+    }
+
+    &__items-block-1 {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: minmax(0, auto);
+        grid-template-areas: 
+        "a a a c d d d"
+        "b b b c d d d";
+    }
+
+    &__item-1 {
+        grid-area: a;
+        align-self: flex-end;
+        margin-right: 32px;
+    }
+
+    &__item-2 {
+        grid-area: b;
+    }
+
+    &__item-3 {
+        grid-area: c;
+    }
+
+    &__item-4 {
+        grid-area: d;
+        display: flex;
+        align-items: center;
+        margin-left: 70px;
+    }
+
+    &__descr {
+        margin-bottom: 32px;
+    }
+
+    &__descr-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: #000A22;
+    }
+
+    &__descr-text {
+        padding-top: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000A22;
+    }
+
+    &__li {
+        background-color: #ffffff;
+        margin-bottom: 24px;
+        border-radius: 8px;
+        position: relative;
+        height: 88px;
+
+        @media (max-width: 767px) {
+            margin-left: 0 !important;
+            margin-bottom: 15px;
+        }
+
+        &:before {
+
+            @media (max-width: 767px) {
+                width: 42px !important;
+                height: 42px !important;
+            }
+        }
+    }
+
+    &__li-descr {
+        padding: 22px;
+        margin-left: 60px;
+
+        @media (max-width: 767px) {
+            margin-left: 45px;
+        }
+    }
+
+    &__li-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 12px;
+        margin-bottom: 5px;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+
+    &__li-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #5C5C5C;
+    }
+    
+}
+
+// before images styling. modify using
+//First block
+.before-picture::before {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #C8E0FB url("../icons/actions_icons/act_ico-1/ic_picture.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-car::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #C8E0FB url("../icons/actions_icons/act_ico-1/ic_car.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-send::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #C8E0FB url("../icons/actions_icons/act_ico-1/ic_send.svg") center no-repeat;
+    border-radius: 8px;
+}
+
+// second block
+.before-upload::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #D5DBFF url("../icons/actions_icons/act_ico-2/ic_upload.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-sort::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #D5DBFF url("../icons/actions_icons/act_ico-2/ic_sort.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-scanner::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #D5DBFF url("../icons/actions_icons/act_ico-2/ic_scanner.svg") center no-repeat;
+    border-radius: 8px;
+}
+
+// third block
+.before-setting::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #FDF5DD url("../icons/actions_icons/act_ico-3/ic_setting.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-favourite::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #FDF5DD url("../icons/actions_icons/act_ico-3/ic_favourite.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-tool::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #FDF5DD url("../icons/actions_icons/act_ico-3/ic_tool.svg") center no-repeat;
+    border-radius: 8px;
+}
+
+// fourth block
+.before-graphbar::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #D6EFEA url("../icons/actions_icons/act_ico-4/ic_graphbar.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-piechart::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #D6EFEA url("../icons/actions_icons/act_ico-4/ic_piechart.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-discount::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #D6EFEA url("../icons/actions_icons/act_ico-4/ic_discount.svg") center no-repeat;
+    border-radius: 8px;
+}
+
+// fifth block
+.before-user::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #FBC8E0 url("../icons/actions_icons/act_ico-5/ic_user.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-start::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #FBC8E0 url("../icons/actions_icons/act_ico-5/ic_start.svg") center no-repeat;
+    border-radius: 8px;
+}
+.before-shoppingbag::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    background: #FBC8E0 url("../icons/actions_icons/act_ico-5/ic_shoppingbag.svg") center no-repeat;
+    border-radius: 8px;
+}
+
+// sixth block
+.before-shoppingcard::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;;
+    left: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #EAD5FA url("../icons/actions_icons/act_ico-6/ic_shoppingcard.svg") center no-repeat;
+}
+.before-scannercode::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #EAD5FA url("../icons/actions_icons/act_ico-6/ic_scannercode.svg") center no-repeat;
+}
+.before-wallet::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 18%;
+    left: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #EAD5FA url("../icons/actions_icons/act_ico-6/ic_wallet.svg") center no-repeat;
+}
+// 
